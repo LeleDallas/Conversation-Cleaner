@@ -1,3 +1,8 @@
+<p align="center"> 
+  <img alt="Screenshot 2023-03-06 alle 11 32 00" src="https://github.com/user-attachments/assets/5a5eca6a-8afb-441d-91fb-ec3697b97467" height="200" width="200" style="border-radius:100%" >
+</p>
+
+
 <h1 align="center"> Conversation Cleaner</h1>
 
 <p align="center">

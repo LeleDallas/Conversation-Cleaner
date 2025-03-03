@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Conversation Cleaner",
+    "version": "1.0",
+    "description": "This extension will toggle the visibility of all messages in GitHub conversation",
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "icons": {
+        "48": "icon.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}

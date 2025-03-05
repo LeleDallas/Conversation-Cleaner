@@ -30,7 +30,7 @@
 
 <p align="justify"> 
 
-Conversation Cleaner is a simple chrome extension that helps you to hide the help hide non-conversation bits in the timeline of a PR. It is a simple tool that helps you to focus on the conversation and avoid distractions.
+Conversation Cleaner is a simple chrome extension that helps you to hide non-conversation bits in the timeline of a PR. It is a simple tool that helps you to focus on the conversation and avoid distractions.
 
 
 <!-- Authors -->

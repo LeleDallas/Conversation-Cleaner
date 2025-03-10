@@ -9,7 +9,8 @@
     },
     "permissions": [
         "activeTab",
-        "tabs"
+        "tabs",
+        "storage"
     ],
     "icons": {
         "48": "icon.png"

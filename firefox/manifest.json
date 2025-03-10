@@ -30,5 +30,10 @@
                 "content.js"
             ]
         }
-    ]
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "conversation-cleaner@example.com"
+        }
+    }
 }

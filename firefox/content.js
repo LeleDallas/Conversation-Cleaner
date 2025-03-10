@@ -36,6 +36,18 @@ browser.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
       }
       break;
     default:
+      sendResponse({});
       break;
+  }
+});
+
+// Ensure the current state is applied when the content script is loaded
+browser.storage.sync.get("isHidden").then((data) => {
+  if (data.isHidden) {
+    const style = document.createElement("style");
+    style.setAttribute("id", "timeline-css");
+    style.innerText =
+      '.js-timeline-item[data-gid^="C_"], .js-timeline-item[data-gid^="CRE_"], .js-timeline-item[data-gid^="RFRE_"], .js-timeline-item[data-gid^="RRE_"], .js-timeline-item[data-gid^="CTDE_"], .js-timeline-item[data-gid^="HRFPE_"], .js-timeline-item[data-gid^="LE_"], .js-timeline-item[data-gid^="MIE_"], .js-timeline-item[data-gid^="DEE_"], .js-timeline-item[data-gid^="DEME_"], .js-timeline-item[data-gid^="ASEE_"], .js-timeline-item[data-gid^="RDE_"], .js-timeline-item[data-gid^="RTE_"], div[class="TimelineItem"]:not([data-view-component]) {display: none;}';
+    document.head.appendChild(style);
   }
 });

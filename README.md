@@ -19,6 +19,7 @@
     <summary>Table of Contents</summary>
     <ol>
         <li><a href="#about-the-project"> ➤ About The Project</a></li>
+        <li><a href="#preview"> ➤ Preview</a></li>
         <li><a href="#authors"> ➤ Authors</a></li>
     </ol>
 </details>
@@ -28,9 +29,29 @@
 <!-- ABOUT THE PROJECT -->
 <h2 id="about-the-project"> :pencil: About The Project</h2>
 
-<p align="justify"> 
+### ❌ The Problem  
+When reviewing pull requests (PRs) on GitHub, the timeline is often cluttered with **system messages, status updates, and other non-conversational elements**. This makes it harder to focus on the actual **discussions, feedback, and code reviews**. Scrolling through irrelevant content slows down the review process and reduces efficiency.  
 
-Conversation Cleaner is a simple chrome extension that helps you to hide non-conversation bits in the timeline of a PR. It is a simple tool that helps you to focus on the conversation and avoid distractions.
+### ✅ The Solution: Conversation-Cleaner  
+**Conversation-Cleaner** is a **simple Chrome extension** that helps you **streamline PR reviews** by hiding unnecessary timeline entries, allowing you to focus on what really matters: the **conversations and feedback**.  
+
+### 🛠️ How It Works  
+🔹 **Filters Out Noise** – Automatically removes system messages and unrelated comments from the PR timeline.  
+🔹 **Enhances Readability** – Provides a cleaner, distraction-free view of discussions.  
+🔹 **Improves Efficiency** – Reduces scrolling and helps reviewers find relevant comments faster.  
+
+### 🎯 Why Use It?  
+✨ **Stay Focused** – Only see the essential discussions and feedback.  
+⚡ **Review Faster** – Spend less time filtering through irrelevant updates.  
+🤝 **Collaborate Better** – Follow conversations more clearly and improve team communication.  
+
+This extension is especially useful for **developers and project maintainers** who frequently review PRs and need a **clutter-free** experience🚀  
+
+
+<!-- Preview -->
+<h2 id="preview"> :eye: Preview</h2>
+
+https://github.com/user-attachments/assets/9969b0ff-23d4-46bc-8a03-36c645fe15df
 
 
 <!-- Authors -->

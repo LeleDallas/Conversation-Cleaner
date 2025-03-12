@@ -20,6 +20,7 @@
     <ol>
         <li><a href="#about-the-project"> ➤ About The Project</a></li>
         <li><a href="#preview"> ➤ Preview</a></li>
+        <li><a href="#install"> ➤ Installation</a></li>
         <li><a href="#authors"> ➤ Authors</a></li>
     </ol>
 </details>
@@ -52,6 +53,20 @@ This extension is especially useful for **developers and project maintainers** w
 <h2 id="preview"> :eye: Preview</h2>
 
 https://github.com/user-attachments/assets/9969b0ff-23d4-46bc-8a03-36c645fe15df
+
+<!-- Preview -->
+<h2 id="install"> :hammer_and_wrench: Installation</h2>
+
+### Google Chrome
+
+Currently, this extension is not available in the Chrome Web Store, but it may be in the future. 
+
+In the meantime, you can install it manually by loading it as an unpacked extension in Chrome:
+
+1. Open Chrome and navigate to `chrome://extensions/` 🌐
+2. Enable **Developer mode** by toggling the switch in the top right corner ⚙️
+3. Click **Load unpacked** 📂
+4. Locate and select the **Conversation-Cleaner** extension folder 📁
 
 
 <!-- Authors -->

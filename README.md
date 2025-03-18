@@ -7,7 +7,7 @@
 
 <p align="center">
     <a href="https://go-skill-icons.vercel.app/">
-             <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome,js,html,css" />
+             <img src="https://go-skill-icons.vercel.app/api/icons?i=chrome,firefox,js,html,css" />
     </a>
 </p>
 
@@ -67,6 +67,17 @@ In the meantime, you can install it manually by loading it as an unpacked extens
 2. Enable **Developer mode** by toggling the switch in the top right corner ⚙️
 3. Click **Load unpacked** 📂
 4. Locate and select the **Conversation-Cleaner** extension folder 📁
+
+### Firefox
+
+Currently, this extension is not available in the Firefox Add-ons store, but it may be in the future.
+
+In the meantime, you can install it manually by loading it as a temporary add-on in Firefox:
+
+1. Open Firefox and navigate to `about:debugging#/runtime/this-firefox` 🌐
+2. Click **Load Temporary Add-on...** 📂
+3. Locate and select the **manifest.json** file in the **Conversation-Cleaner** extension folder 📄
+
 
 
 <!-- Authors -->

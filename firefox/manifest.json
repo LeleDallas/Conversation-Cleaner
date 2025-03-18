@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+    "name": "Conversation Cleaner",
+    "version": "1.0",
+    "description": "A tool to clean up your conversations.",
+    "icons": {
+        "48": "icon.png"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "webNavigation"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Conversation Cleaner"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "conversation-cleaner@example.com"
+        }
+    }
+}

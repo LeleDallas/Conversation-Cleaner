@@ -34,7 +34,7 @@
 When reviewing pull requests (PRs) on GitHub, the timeline is often cluttered with **system messages, status updates, and other non-conversational elements**. This makes it harder to focus on the actual **discussions, feedback, and code reviews**. Scrolling through irrelevant content slows down the review process and reduces efficiency.  
 
 ### ✅ The Solution: Conversation-Cleaner  
-**Conversation-Cleaner** is a **simple Chrome extension** that helps you **streamline PR reviews** by hiding unnecessary timeline entries, allowing you to focus on what really matters: the **conversations and feedback**.  
+**Conversation-Cleaner** is a **simple Web extension** that helps you **streamline PR reviews** by hiding unnecessary timeline entries, allowing you to focus on what really matters: the **conversations and feedback**.  
 
 ### 🛠️ How It Works  
 🔹 **Filters Out Noise** – Automatically removes system messages and unrelated comments from the PR timeline.  

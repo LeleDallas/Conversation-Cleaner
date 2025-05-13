@@ -52,7 +52,12 @@ This extension is especially useful for **developers and project maintainers** w
 <!-- Preview -->
 <h2 id="preview"> :eye: Preview</h2>
 
+### Hide/Show comments
 https://github.com/user-attachments/assets/9969b0ff-23d4-46bc-8a03-36c645fe15df
+
+### Expand all
+https://github.com/user-attachments/assets/254a8cf0-220a-4774-8741-2509babbafa9
+
 
 <!-- Preview -->
 <h2 id="install"> :hammer_and_wrench: Installation</h2>

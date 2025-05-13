@@ -42,3 +42,23 @@ chrome.storage.onChanged.addListener((changes, namespace) => {
     });
   }
 });
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.action === "clickLoadMore") {
+    // Select all buttons with the class 'ajax-pagination-btn'
+    const loadMoreButtons = document.querySelectorAll(
+      "button.ajax-pagination-btn"
+    );
+
+    // Filter buttons with the text "Load more…"
+    const loadMoreButtonsFiltered = Array.from(loadMoreButtons).filter(
+      (button) => button.textContent.trim() === "Load more…"
+    );
+
+    // Click each "Load more…" button
+    loadMoreButtonsFiltered.forEach((button) => button.click());
+
+    // Respond with whether there are more buttons to click
+    sendResponse({ hasMore: loadMoreButtonsFiltered.length > 0 });
+  }
+});

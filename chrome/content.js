@@ -16,6 +16,7 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
     .js-timeline-item[data-gid^="ASEE_"] .TimelineItem[data-view-component]:not(.py-0),
     .js-timeline-item[data-gid^="RDE_"] .TimelineItem[data-view-component]:not(.py-0),
     .js-timeline-item[data-gid^="RTE_"] .TimelineItem[data-view-component]:not(.py-0),
+    [data-testid="timeline-item"][data-item-type="commits"],
     div[class="TimelineItem"]:not([data-view-component]),
     .TimelineItem[data-team-hovercards-enabled]
   `;

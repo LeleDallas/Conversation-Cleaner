@@ -1,3 +1,5 @@
+const cssSelector = '.js-timeline-item[data-gid^="C_"], .js-timeline-item[data-gid^="CRE_"], .js-timeline-item[data-gid^="RFRE_"], .js-timeline-item[data-gid^="RRE_"], .js-timeline-item[data-gid^="CTDE_"], .js-timeline-item[data-gid^="HRFPE_"], .js-timeline-item[data-gid^="LE_"], .js-timeline-item[data-gid^="MIE_"], .js-timeline-item[data-gid^="DEE_"], .js-timeline-item[data-gid^="DEME_"], .js-timeline-item[data-gid^="ASEE_"], .js-timeline-item[data-gid^="RDE_"], .js-timeline-item[data-gid^="RTE_"], [data-testid="timeline-item"][data-item-type="commits"], div[class="TimelineItem"]:not([data-view-component])';
+
 browser.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
   switch (request.action) {
     case "toggleCSS":
@@ -9,8 +11,7 @@ browser.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
         } else {
           const style = document.createElement("style");
           style.setAttribute("id", "timeline-css");
-          style.innerText =
-            '.js-timeline-item[data-gid^="C_"], .js-timeline-item[data-gid^="CRE_"], .js-timeline-item[data-gid^="RFRE_"], .js-timeline-item[data-gid^="RRE_"], .js-timeline-item[data-gid^="CTDE_"], .js-timeline-item[data-gid^="HRFPE_"], .js-timeline-item[data-gid^="LE_"], .js-timeline-item[data-gid^="MIE_"], .js-timeline-item[data-gid^="DEE_"], .js-timeline-item[data-gid^="DEME_"], .js-timeline-item[data-gid^="ASEE_"], .js-timeline-item[data-gid^="RDE_"], .js-timeline-item[data-gid^="RTE_"], div[class="TimelineItem"]:not([data-view-component]) {display: none;}';
+          style.innerText = `${cssSelector} {display: none;}`;
           document.head.appendChild(style);
           sendResponse({ isHidden: true });
         }
@@ -20,8 +21,7 @@ browser.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
       {
         const style = document.createElement("style");
         style.setAttribute("id", "timeline-css");
-        style.innerText =
-          '.js-timeline-item[data-gid^="C_"], .js-timeline-item[data-gid^="CRE_"], .js-timeline-item[data-gid^="RFRE_"], .js-timeline-item[data-gid^="RRE_"], .js-timeline-item[data-gid^="CTDE_"], .js-timeline-item[data-gid^="HRFPE_"], .js-timeline-item[data-gid^="LE_"], .js-timeline-item[data-gid^="MIE_"], .js-timeline-item[data-gid^="DEE_"], .js-timeline-item[data-gid^="DEME_"], .js-timeline-item[data-gid^="ASEE_"], .js-timeline-item[data-gid^="RDE_"], .js-timeline-item[data-gid^="RTE_"], div[class="TimelineItem"]:not([data-view-component]) {display: none;}';
+        style.innerText = `${cssSelector} {display: none;}`;
         document.head.appendChild(style);
         sendResponse({ isHidden: true });
       }
@@ -46,8 +46,7 @@ browser.storage.sync.get("isHidden").then((data) => {
   if (data.isHidden) {
     const style = document.createElement("style");
     style.setAttribute("id", "timeline-css");
-    style.innerText =
-      '.js-timeline-item[data-gid^="C_"], .js-timeline-item[data-gid^="CRE_"], .js-timeline-item[data-gid^="RFRE_"], .js-timeline-item[data-gid^="RRE_"], .js-timeline-item[data-gid^="CTDE_"], .js-timeline-item[data-gid^="HRFPE_"], .js-timeline-item[data-gid^="LE_"], .js-timeline-item[data-gid^="MIE_"], .js-timeline-item[data-gid^="DEE_"], .js-timeline-item[data-gid^="DEME_"], .js-timeline-item[data-gid^="ASEE_"], .js-timeline-item[data-gid^="RDE_"], .js-timeline-item[data-gid^="RTE_"], div[class="TimelineItem"]:not([data-view-component]) {display: none;}';
+    style.innerText = `${cssSelector} {display: none;}`;
     document.head.appendChild(style);
   }
 });
